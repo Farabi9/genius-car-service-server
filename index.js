@@ -71,6 +71,10 @@ async function run() {
             res.send(result);
         })
 
+        app.get('/hero', (req, res) =>{
+            res.send('hero hero hroku')
+        })
+
         //Delete
         app.delete('/service/:id', async (req, res) => {
             const id = req.params.id;
